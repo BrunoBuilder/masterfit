@@ -1,9 +1,12 @@
 package entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Athlete {
 
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	private Integer code;
 	private String name;
 	private Character gender;
@@ -95,12 +98,10 @@ public class Athlete {
 
 	@Override
 	public String toString() {
-		return "Athlete [code=" + code + ", name=" + name + ", gender=" + gender + ", birthdate=" + birthdate
+		return "Athlete [code=" + code + ", name=" + name + ", gender=" + gender + ", birthdate=" + sdf.format(birthdate)
 				+ ", height=" + height + ", weight=" + weight + ", bF=" + bF + ", levelOfTraining=" + levelOfTraining
 				+ "]";
 	} 
 
 	
-
-
 }
