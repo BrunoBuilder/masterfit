@@ -36,6 +36,7 @@ public class Program {
 	    
 	    Athlete athlete = new Athlete(code, name, gender, birthDate, height, weight, bf, trainingLevel);
 	    
+	    System.out.println();
 	    System.out.println(athlete.toString());
 
 	    sc.close();

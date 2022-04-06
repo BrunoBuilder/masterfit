@@ -98,9 +98,8 @@ public class Athlete {
 
 	@Override
 	public String toString() {
-		return "Athlete [code=" + code + ", name=" + name + ", gender=" + gender + ", birthdate=" + sdf.format(birthdate)
-				+ ", height=" + height + ", weight=" + weight + ", bF=" + bF + ", levelOfTraining=" + levelOfTraining
-				+ "]";
+		return "Código: " + code + "\nNome: " + name + "\nSexo: " + gender + "\nData de nascimento: " + sdf.format(birthdate)
+				+ "\nAltura: " + height + "m\nPeso: " + weight + "kg\nBF: " + bF + "%\nNível de treino: " + levelOfTraining;
 	} 
 
 	
